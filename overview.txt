@@ -1,0 +1,128 @@
+Portfolio Website Overview
+
+1- Content/ Structure
+   Next.js- Framework that organizes the website
+    - Open-source, full-stack web development framework built on top of the JavaScript library React.
+    - When you build a standard React app, it primarily runs in the user's browser (Client-Side Rendering).
+        - Server-Side Rendering (SSR): Pre-renders pages on a server before sending them to the user, making websites load faster and significantly improving SEO.
+        - File-Based Routing: Automatically creates a website route (like /about or /contact) simply by creating a file inside a specific folder.
+        - Full-Stack Capabilities: Allows you to write frontend UI code and backend API code inside the exact same project.
+        - Performance Optimization: Automatically handles image compression, font loading, and code splitting to keep websites fast.
+   React- Builds the actual pieces of the interface
+    - Open-source JavaScript library used for building user interfaces.
+        - Component-Based Architecture: Websites are broken down into small, isolated pieces of code called components (like a Button, Navbar, or SearchBar). You build these components once and reuse them across your entire website.
+        - Declarative Code: Instead of telling the browser exactly how to update the page step-by-step, you describe what the UI should look like based on the current data. React automatically updates the screen when that data changes.
+    - Mainly taps into app/*.tsx and components/*.tsx
+
+   TSX- TypeScript XML
+    - It is a file extension (.tsx) and a syntax format used when you want to write TypeScript code combined with JSX (HTML-like syntax) inside a React application.
+    - layout.tsx (the shell around every page)
+   
+
+2- Design/ Appearance
+   Tailwind CSS- Handles majority of the visual styling inside the tsx files.
+   globals.css- Contains styles that can be applied globally.
+
+3- Functionality
+   TypeScript/ JavaScript
+   APIs
+   Chatbot
+   etc.
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Putting Everything Together:
+portfolio/
+│
+├── app/
+│   │
+│   ├── layout.tsx
+│   │      │
+│   │      ├── Navbar
+│   │      ├── current page
+│   │      ├── Chatbot
+│   │      └── Footer
+│   │
+│   ├── page.tsx
+│   │      └── Home
+│   │
+│   ├── projects/
+│   │   └── page.tsx
+│   │
+│   ├── blog/
+│   │   └── page.tsx
+│   │
+│   ├── accomplishments/
+│   │   └── page.tsx
+│   │
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts
+│   │
+│   └── globals.css
+│
+├── components/
+│   ├── Navbar.tsx
+│   ├── Hero.tsx
+│   ├── ProjectCard.tsx
+│   ├── CertificationCard.tsx
+│   ├── Chatbot.tsx
+│   └── Footer.tsx
+│
+├── data/
+│   ├── projects.ts
+│   └── certifications.ts
+│
+├── public/
+│   ├── images/
+│   └── resume/
+│
+├── .env.local
+├── .gitignore
+├── package.json
+└── package-lock.json
+_________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Technologies Map:
+NEXT.JS
+│
+├── app/
+├── routing
+├── layout.tsx
+├── page.tsx
+└── API routes
+
+REACT
+│
+├── page components
+├── Navbar
+├── ProjectCard
+├── Chatbot
+└── reusable UI
+
+TYPESCRIPT
+│
+├── *.ts
+└── *.tsx
+
+TAILWIND
+│
+└── className="..."
+
+GLOBALS.CSS
+│
+├── custom animations
+├── global styles
+└── special CSS effects
+
+PUBLIC
+│
+├── images
+├── certificates
+└── resume
+
+AI / API
+│
+├── components/Chatbot.tsx
+└── app/api/chat/route.ts
+
+PROJECT DATA
+│
+└── data/*.ts
