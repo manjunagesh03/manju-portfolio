@@ -1,4 +1,4 @@
-import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaMedium } from "react-icons/fa";
 
 export default function ContactPage() {
   return (
@@ -52,6 +52,20 @@ export default function ContactPage() {
                 <span>
                     GitHub
                 </span>
+            </a>
+
+            {/* Medium */}
+            <a
+                href="https://medium.com/@manjunagesh2003"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 text-gray-300 transition hover:text-white"
+            >
+                <FaMedium className="text-2xl text-white" />
+
+                <span>
+                    Medium
+                    </span>
             </a>
 
         </div>
