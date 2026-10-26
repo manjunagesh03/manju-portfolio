@@ -236,7 +236,7 @@ export default function SkillsPage() {
                 <li>Data Structures and Analysis of Algorithms</li>
                 <li>Data Mining (Theory/Application)</li>
                 <li>Machine Learning</li>
-                <li>Advanced Machine Learning</li>
+                <li>Advanced NLP</li>
                 <li>Deep Learning</li>
                 <li>Software Engineering</li>
                 <li>Databases</li>
